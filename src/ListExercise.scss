@@ -1,0 +1,90 @@
+.exercise_wrapper {
+    width: 100%;
+    padding: 10px;
+}
+
+.exercise_titles {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.exercise_title {
+    &.date {
+        width: 20%;
+    }
+
+    &.autor {
+        width: 30%;
+    }
+
+    &.account {
+        width: 30%;
+    }
+
+    &.status {
+        width: 20%;
+        text-align: center;
+    }
+}
+
+.exercise_hr {
+    margin: 0 -10px 10px;
+    border: 1px solid black;
+}
+
+.exercise_pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.exercise_current {
+    padding: 5px 10px;
+    border: 1px solid rgb(21, 85, 158);
+    margin-right: 5px;
+}
+
+.exercise_empty {
+    display: flex;
+    justify-content: center;
+}
+
+.exercise_pages {
+    margin-right: 10px;
+}
+.exercise_arrow {
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #18bac0;
+    border-right: 2px solid #18bac0;
+
+    &.add {
+        transform: rotate(45deg);
+        margin-right: 5px;
+    }
+
+    &.subtraction {
+        transform: rotate(225deg);
+        margin-left: 5px;
+    }
+}
+
+.exercise_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+
+    &.add {
+       margin-right: 10px; 
+    }
+
+    &.subtraction {
+        margin-right: 5px;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
